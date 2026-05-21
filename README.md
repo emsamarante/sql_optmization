@@ -42,7 +42,13 @@ ORDER BY
 
 > Parte 2: Optimizing the query
 
-Looking at the plan of execution, I got `Planning Time: 0.817 ms` and `Execution Time: 366.344 ms`.
+Looking at the plan of execution using the following command:
+
+```sql
+EXPLAIN (ANALYZE, BUFFERS ) 'my query'
+```
+
+I got `Planning Time: 0.817 ms` and `Execution Time: 366.344 ms`.
 
 Now, I am going to starting its optimization:
 
